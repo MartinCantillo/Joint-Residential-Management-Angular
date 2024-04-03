@@ -7,14 +7,17 @@ import { CloginComponent } from './Components/Login/clogin/clogin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CRegistrarseComponent } from './Components/Registrarse/cregistrarse/cregistrarse.component';
 
 const appRoutes: Routes = [
-  { path: "Login", component: CloginComponent }
+  { path: "Login", component: CloginComponent },
+  {path:"Registrarse", component:CRegistrarseComponent},
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    CloginComponent
+    CloginComponent,
+    CRegistrarseComponent
   ],
   imports: [
     BrowserModule,
